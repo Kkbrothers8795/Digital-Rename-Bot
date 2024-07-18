@@ -1,11 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
-# Special Thanks To (https://github.com/JayMahakal98)
-# Update Channel @Digital_Botz & @DigitalBotz_Support
-
 import motor.motor_asyncio, datetime
 from config import Config
 from .utils import send_log
@@ -25,7 +17,7 @@ class Database:
             prefix=None,
             suffix=None,
             metadata_mode=False,
-            metadata_code=""" -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @Rkn_Bots" -metadata author="@RknDeveloper" -metadata:s:s title="Subtitled By :- @Rkn_Bots" -metadata:s:a title="By :- @RknDeveloper" -metadata:s:v title="By:- @Rkn_Bots" """,
+            metadata_code=""" -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @HxBots" -metadata author="@Kirodewal" -metadata:s:s title="Subtitled By :- @HxSourceCode" -metadata:s:a title="By :- @Kirodewal" -metadata:s:v title="By:- @HxBots" """,
             expiry_time=None,
             has_free_trial=False
         )
