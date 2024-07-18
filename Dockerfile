@@ -1,5 +1,5 @@
 # Use the official Python image
-FROM python:3.9-slim-buster
+FROM python:3.12-slim
 
 # Set the working directory in the container
 WORKDIR /app
@@ -8,10 +8,10 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install any needed dependencies specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code to the working directory
 COPY . .
 
 # Command to run the application
-CMD ["python", "bot.py"]
+CMD ["python3", "bot.py"]
