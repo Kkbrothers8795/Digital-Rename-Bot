@@ -1,9 +1,3 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
-# Update Channel @Digital_Botz & @DigitalBotz_Support
 
 import aiohttp, asyncio, warnings, pytz, datetime
 import logging, logging.config, glob, sys, importlib, pyromod
@@ -22,7 +16,7 @@ logging.getLogger("cinemagoer").setLevel(logging.ERROR)
 class Digital_FileRenameBot(Client):
     def __init__(self):
         super().__init__(
-            name="Digital_FileRenameBot",
+            name="RenameBot-Premium",
             api_id=Config.API_ID,
             api_hash=Config.API_HASH,
             bot_token=Config.BOT_TOKEN,
@@ -52,7 +46,7 @@ class Digital_FileRenameBot(Client):
                 load = importlib.util.module_from_spec(spec)
                 spec.loader.exec_module(load)
                 sys.modules["plugins" + plugin_name] = load
-                print("Digital Botz Imported " + plugin_name)
+                print("HxBotz Imported " + plugin_name)
                 
         print(f"{me.first_name} Iꜱ Sᴛᴀʀᴛᴇᴅ.....✨️")
         for id in Config.ADMIN:
