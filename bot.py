@@ -13,7 +13,7 @@ logging.config.fileConfig("logging.conf")
 logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("cinemagoer").setLevel(logging.ERROR)
 
-class Digital_FileRenameBot(Client):
+class RenameBot_Premium(Client):
     def __init__(self):
         super().__init__(
             name="RenameBot-Premium",
@@ -69,7 +69,7 @@ class Digital_FileRenameBot(Client):
         await super().stop()
         print("Bot Stopped 🙄")
 
-bot_instance = Digital_FileRenameBot()
+bot_instance = RenameBot_Premium()
 
 def main():
     async def start_services():
