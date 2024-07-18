@@ -1,14 +1,8 @@
-# (c) @RknDeveloperr
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
-
 from config import Config
 from helper.database import db
 from helper.utils import get_seconds
 from pyrogram.types import Message
-from pyrogram import Client, filters, Client as Digital_4gbRenameBot
+from pyrogram import Client, filters, Client
 from pyrogram.errors import FloodWait, InputUserDeactivated, UserIsBlocked, PeerIdInvalid
 import os, sys, time, asyncio, logging, datetime, pytz
 
@@ -34,7 +28,7 @@ async def log_file(b, m):
     except Exception as e:
         await m.reply(str(e))
 
-@Digital_4gbRenameBot.on_message(filters.command(["addpremium", "add_premium"]) & filters.user(Config.ADMIN))
+@Client.on_message(filters.command(["addpremium", "add_premium"]) & filters.user(Config.ADMIN))
 async def add_premium(client, message):
     if len(message.command) == 4:
         time_zone = datetime.datetime.now(pytz.timezone("Asia/Kolkata"))
@@ -62,7 +56,7 @@ async def add_premium(client, message):
     await message.reply_text("Usage : /addpremium user_id time (e.g., '1 day for days', '1 hour for hours', or '1 min for minutes', or '1 month for months' or '1 year for year')")
     return
 
-@Digital_4gbRenameBot.on_message(filters.command(["removepremium", "remove_premium"]) & filters.user(Config.ADMIN))
+@Client.on_message(filters.command(["removepremium", "remove_premium"]) & filters.user(Config.ADMIN))
 async def remove_premium(bot, message):
     if len(message.command) == 2:
         user_id = int(message.command[1])  # Convert the user_id to integer
@@ -160,8 +154,3 @@ async def send_msg(user_id, message):
         logger.error(f"{user_id} : {e}")
         return 500
  
-
-# Rkn Developer 
-# Don't Remove Credit 😔
-# Telegram Channel @RknDeveloper & @Rkn_Bots
-# Developer @RknDeveloperr
