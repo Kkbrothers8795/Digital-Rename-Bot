@@ -5,13 +5,12 @@ FROM python:3.12-slim
 WORKDIR /app
 
 # Copy the dependencies file to the working directory
-COPY requirements.txt .
+COPY . .
 
 # Install any needed dependencies specified in requirements.txt
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 # Copy the rest of the application code to the working directory
-COPY . .
 
 # Command to run the application
 CMD ["python3", "bot.py"]
