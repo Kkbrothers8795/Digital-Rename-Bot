@@ -156,7 +156,7 @@ Exᴀᴍᴩʟᴇ:- `/set_prefix @HxSourceCode`
 
 ◦ <code> -map 0 -c:s copy -c:a copy -c:v copy -metadata title="Powered By:- @HxBots" -metadata author="@Kirodewal" -metadata:s:s title="Subtitled By :- @HxSourceCode" -metadata:s:a title="By :- @HxSourceCode" -metadata:s:v title="By:- @Kirodewal" </code>
 
-📥 Fᴏʀ Hᴇʟᴘ Cᴏɴᴛ. @Digital_Botz
+📥 Fᴏʀ Hᴇʟᴘ Cᴏɴᴛ. @HxSupport
 """
     
     RKN_PROGRESS = """<b>\n
