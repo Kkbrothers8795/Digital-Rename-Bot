@@ -16,8 +16,8 @@ class Config(object):
  
     # other configs
     RKN_PIC = os.environ.get("RKN_PIC", "https://graph.org/file/cca849a2f63053fa3f622.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6705898491').split()]
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "")
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '754495556').split()]
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
 
     #force subs
     try:
