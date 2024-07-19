@@ -20,8 +20,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 __name__ = "RenameBot_Premium"
 __version__ = "3.0.3"
 __license__ = " Apache License, Version 2.0"
-__copyright__ = "Copyright (C) 2022-present RknDeveloper <https://github.com/oVo-HxBots/>"
-__developer__ = "RknDeveloper <https://github.com/oVo-HxBots>"
+__copyright__ = "Copyright (C) 2022-present oVo-HxBots <https://github.com/oVo-HxBots/>"
+__developer__ = "oVo-HxBots <https://github.com/oVo-HxBots>"
 
 # main working files 
 # - bot.py
