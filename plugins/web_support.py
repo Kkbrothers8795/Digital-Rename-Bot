@@ -2,7 +2,7 @@ from aiohttp import web
 
 RENAME_PRO = web.RouteTableDef()
 
-@Rkn_FileRenameBot.get("/", allow_head=True)
+@RENAME_PRO.get("/", allow_head=True)
 async def root_route_handler(request):
     return web.json_response("HxBots Developer")
 
