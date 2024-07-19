@@ -1,6 +1,6 @@
 from aiohttp import web
 
-RENAME-PRO = web.RouteTableDef()
+RENAME_PRO = web.RouteTableDef()
 
 @Rkn_FileRenameBot.get("/", allow_head=True)
 async def root_route_handler(request):
@@ -8,6 +8,6 @@ async def root_route_handler(request):
 
 async def web_server():
     web_app = web.Application(client_max_size=30000000)
-    web_app.add_routes(RENAME-PRO)
+    web_app.add_routes(RENAME_PRO)
     return web_app
 
